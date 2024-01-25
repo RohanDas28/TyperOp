@@ -71,7 +71,7 @@ function App() {
           </a>
           {/* Navigation Section */}
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a target="_blank" href="https://rohandas28.github.io/">
+            <a target="_blank" href="https://github.com/RohanDas28/TyperOp">
               {/* Github Link Button */}
               <button className="inline-flex items-center bg-yellow-400 border-0 py-2 px-4 focus:outline-none font-semibold text-xl hover:bg-yellow-500 rounded-full text-black mt-2 md:mt-0">
                 Github
