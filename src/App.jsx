@@ -91,9 +91,9 @@ function App() {
       <div className="h-[80vh] mx-auto p-8 md:p-24 bg-gray-900 text-white text-center">
         <form onSubmit={(e) => e.preventDefault()}>
           {/* Test Title */}
-          <h1 className="text-4xl font-bold text-yellow-500 mb-4">Keyboard Speed Test</h1>
+          <h1 className="text-5xl font-bold text-yellow-500 sm:mt-16 md:mt-36 mb-4">Keyboard Speed Test</h1>
           {/* Text to Type */}
-          <p className="text-white text-xl">{textToType}</p>
+          <p className="text-white text-2xl">{textToType}</p>
           {/* Input for Typing */}
           <div className="mt-4">
             <input
@@ -116,6 +116,8 @@ function App() {
           {isTestCompleted && <button type="button" onClick={handleRetry} className="mt-4 bg-yellow-500 text-gray-900 p-3 rounded">Retry</button>}
         </form>
       </div>
+
+
 
       {/* Footer Section */}
       <footer className="text-gray-400 bg-gray-900 body-font">
