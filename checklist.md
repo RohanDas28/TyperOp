@@ -1,0 +1,7 @@
+- [X] Make use components
+- [X] Add a reset button
+- [X] Add React Icons
+- [X] Fix the Nav bar
+- [x] animation library
+- [x] Use more paragraphs (chatgpt)
+- [x] Use Kursor.js

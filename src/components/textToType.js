@@ -1,27 +1,47 @@
 const paragraphs = [
-    'In the heart of the bustling city, where dreams meet reality, a young artist paints strokes of hope on the canvas of life.',
-    'Amidst the chaos, a lone tree stands tall, symbolizing resilience and the strength to weather life’s storms.',
-    'The laughter of children echoes through the narrow streets, a testament to the enduring spirit of joy in simplicity.',
-    'As the sun sets, casting a warm glow on the horizon, a community comes together, sharing stories that bridge generations.',
-    'In the quiet corners, an old bookstore cradles the wisdom of ages, inviting seekers to lose themselves in the magic of written words.',
-    'A small café, with the aroma of freshly brewed coffee, becomes a haven for introspection and the birthplace of friendships.',
-    'Through the bustling market, where vendors weave tales of craftsmanship, the pulse of a city beats with the rhythm of shared aspirations.',
-    'In the silence of a park, where time slows down, lovers carve promises into the bark of a tree, binding their destinies.',
-    'Beyond the skyscrapers, a river flows, carrying with it the whispers of dreams and the reflections of a city that never sleeps.',
-    'Underneath the city lights, a street musician plays a melody that resonates with the dreams and desires of those passing by.',
-    'In the midst of challenges, the spirit of community prevails, reminding us that together, we can build bridges over the divides.',
-    'A garden blooms in the heart of an urban jungle, a living testament to the beauty that can thrive in unexpected places.',
-    'Within the pages of a worn-out journal, a poet scribbles verses that capture the essence of human experience and the dance of emotions.',
-    'On the walls of a street, vibrant murals tell the stories of a neighborhood, celebrating diversity and the tapestry of cultures.',
-    'As night falls, the city skyline transforms into a canvas of lights, each twinkle a symbol of dreams pursued and destinies intertwined.',
-    'Beneath the surface, a subway system carries people from different walks of life, connecting their stories in the vast web of urban existence.',
-    'In the embrace of a public park, families gather for picnics, weaving memories that will be passed down through generations.',
-    'Through the lens of a camera, a photographer captures fleeting moments, freezing time and preserving the soul of the city.',
-    'In the heartbeat of a city, where the rhythm of life is felt, there lies a tapestry woven with the threads of countless stories.'
-  ];
-  
-  export const getRandomParagraph = () => {
-    const randomIndex = Math.floor(Math.random() * paragraphs.length);
-    return paragraphs[randomIndex];
-  };
-  
+  'The sun sets behind the mountains, painting the sky in hues of orange and pink, as a gentle breeze whispers through the trees.',
+  'In a quaint village, a blacksmith hammers away, crafting intricate designs that tell stories of tradition and craftsmanship.',
+  'A group of friends gathers around a bonfire, sharing laughter and tales beneath a starlit sky, creating memories that will last a lifetime.',
+  'As morning dew glistens on the grass, a solitary bird perches on a branch, its song a melody that heralds the beginning of a new day.',
+  'In a cozy library, the scent of old books fills the air, inviting readers to explore worlds within the pages and lose themselves in imagination.',
+  'A bustling farmer\'s market showcases a vibrant array of fresh produce, each stall a celebration of nature\'s bounty and the joy of community.',
+  'On a serene lake, a small boat glides across the water, its oars creating rhythmic ripples that mirror the tranquility of the surroundings.',
+  'A group of children plays in a meadow, chasing butterflies and reveling in the simple joys of youth, their laughter echoing through the air.',
+  'In a beachside cafe, the sound of waves crashing against the shore provides a soothing backdrop as patrons enjoy conversations over cups of steaming tea.',
+  'Amidst a field of wildflowers, a solitary artist captures the beauty of nature on canvas, their brushstrokes a testament to the magic found in simplicity.',
+  'Underneath a canopy of stars, a storyteller weaves tales of fantasy and adventure, transporting listeners to realms where anything is possible.',
+  'A cozy fireplace flickers in a log cabin, casting a warm glow that embraces those within, creating a haven of comfort and togetherness.',
+  'On a city rooftop, a community garden flourishes, bringing urban dwellers together to cultivate a green oasis amidst the concrete jungle.',
+  'In a quiet chapel, the soft notes of an organ fill the air, as a couple begins their journey of love, surrounded by the blessings of family and friends.',
+  'A hillside vineyard bathes in the golden light of the setting sun, the grapevines swaying gently as if dancing to nature\'s timeless symphony.',
+  'In a bustling kitchen, the aroma of freshly baked bread wafts through the air, a testament to the joy of creation and the pleasure of shared meals.',
+  'On a cobblestone street, a street performer captivates passersby with a mesmerizing dance, their movements a celebration of artistic expression.',
+  'A group of friends embarks on a hiking adventure, navigating forest trails and reaching a summit where panoramic views reward their journey.',
+  'In a city park, a group of people practices yoga, finding solace and balance amidst the greenery, their collective energy harmonizing with nature.',
+  'As twilight descends, a lantern-lit garden comes to life, creating a magical atmosphere where dreams and reality converge in a tapestry of enchantment.',
+  'Beneath a canopy of cherry blossoms, a serene garden invites visitors to stroll along meandering paths, surrounded by the delicate beauty of nature.',
+    'In a coastal town, a lighthouse stands tall against the crashing waves, a beacon of guidance that has weathered storms and witnessed tales of the sea.',
+    'A family gathers around a table, the aroma of a home-cooked meal filling the air, as they share stories and laughter, creating bonds that transcend time.',
+    'On a mountain trail, the crunch of fallen leaves underfoot accompanies hikers as they ascend, the panoramic view from the summit a reward for their effort.',
+    'In an artist\'s studio, vibrant paints and canvases await inspiration, as creativity flows freely, giving birth to expressions that stir the soul.',
+    'A quaint teahouse overlooks a zen garden, where the sound of trickling water and the rustle of bamboo leaves create a tranquil sanctuary for reflection.',
+    'A group of friends sets up a campfire by a riverside, the crackling flames casting dancing shadows as they share tales and gaze at the starlit sky.',
+    'Amongst ancient ruins, a historian traces the remnants of civilizations past, connecting the present to the echoes of history etched in stone.',
+    'In a coastal village, fishermen return with their catch of the day, their boats bobbing gently in the harbor as seagulls swoop and call overhead.',
+    'A carnival comes to life in a town square, with the laughter of children on merry-go-rounds and the scent of cotton candy creating an atmosphere of joy.',
+    'Within the walls of a music studio, musicians collaborate to create a symphony of sound, each note weaving into a tapestry of harmonious melodies.',
+    'A group of volunteers tends to a community garden, cultivating a space where flowers bloom and vegetables thrive, symbolizing the beauty of collective effort.',
+    'On a snowy hillside, families come together for a day of sledding, the crisp winter air echoing with the sounds of laughter and playful shouts.',
+    'In a historic library, ancient manuscripts and leather-bound books line the shelves, preserving the knowledge and wisdom of generations past.',
+    'A trail of footprints leads through a sandy beach, imprinted by the journey of a lone wanderer who finds solace in the rhythmic crash of ocean waves.',
+    'A colorful hot air balloon ascends into the sky, carrying passengers on a journey that offers a bird\'s-eye view of landscapes below.',
+    'In a botanical garden, exotic flowers bloom in a riot of colors, each petal telling a story of adaptation and the beauty of diversity.',
+    'A street market buzzes with activity, vendors showcasing handmade crafts, delicious treats, and the vibrant tapestry of a community coming together.',
+    'A group of friends embarks on a road trip, the open road stretching before them, with each mile bringing new landscapes and adventures.',
+    'In a rainforest, a chorus of diverse wildlife creates a symphony of natural sounds, each creature playing its part in the delicate balance of ecosystems.',
+];
+
+export const getRandomParagraph = () => {
+  const randomIndex = Math.floor(Math.random() * paragraphs.length);
+  return paragraphs[randomIndex];
+};
